@@ -7,7 +7,9 @@
     /* Colors */
     --color-primary: #007BFF;
     --color-primary-hover: #0056b3;
-    --color-background:  #f5f7fb;
+    --color-secondary: #28A745;
+    --color-secondary-hover: #169c16;
+    --color-background:#f5f5f5 ;
     --color-white: #ffffff;
     --color-black: #000000;
     --color-gray-50: #fafafa;
@@ -25,7 +27,7 @@
     --font-size-vsm: 12px;
     --font-size-sm: 14px;
     --font-size-lg: 20px;
-    --font-size-xlg: 24px;
+    --font-size-xlg: 30px;
     --line-height: 1.5;
 
     /* Shadows */
@@ -57,7 +59,7 @@ body {
     color: var(--color-white);
     background-color: var(--color-primary);
     border: none;
-    border-radius: 8px;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
@@ -77,6 +79,16 @@ body {
 .button.outline:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
+}
+
+.button.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 50px;
+}
+
+.button.secondary:hover {
+    background-color: var(--color-secondary-hover);
 }
 
 /* ===================== */
