@@ -1,0 +1,110 @@
+/* ===================== */
+/*       VARIABLES       */
+/* ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+:root {
+    /* Colors */
+    --color-primary: #007BFF;
+    --color-primary-hover: #0056b3;
+    --color-background:  #f5f7fb;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray-50: #fafafa;
+    --color-gray-100: #f5f5f5;
+    --color-gray-200: #e0e0e0;
+    --color-gray-300: #c0c0c0;
+    --color-primary-text: #212529;
+    --color-secondary-text: #3d3d3d;
+    --color-red: #db4534;
+    --color-red-hover: #bd3223;
+
+    /* Fonts */
+    --font-family: 'Cairo', sans-serif;
+    --font-size-base: 16px;
+    --font-size-vsm: 12px;
+    --font-size-sm: 14px;
+    --font-size-lg: 20px;
+    --font-size-xlg: 24px;
+    --line-height: 1.5;
+
+    /* Shadows */
+    --page-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ===================== */
+/*       BASE STYLES     */
+/* ===================== */
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-primary-text);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+    line-height: var(--line-height);
+}
+
+/* ===================== */
+/*        BUTTONS        */
+/* ===================== */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.button.outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.button.outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* ===================== */
+/*         FORMS         */
+/* ===================== */
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    font-size: var(--font-size-sm);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    color: var(--color-primary-text);
+    background-color: var(--color-white);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.04);
+    background-color: var(--color-white);
+}
+
+label {
+    display: block;
+    margin: 10px 0px 5px 0px;
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+}
