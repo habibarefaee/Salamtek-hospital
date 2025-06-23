@@ -1,0 +1,81 @@
+body{
+    background-color: var(--color-background);
+}
+.awareness-page {
+    padding: 40px 20px;
+  }
+  
+  .section {
+    margin-bottom: 50px;
+  }
+  .page-title {
+    text-align: center;
+    font-size: var(--font-size-xlg);
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .page-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-primary);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-xlg);
+    color: var(--color-secondary-text);
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .awareness-card {
+    width: 300px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: var(--page-shadow);
+    transition: transform 0.3s ease;
+    text-align: right;
+  }
+  
+  .awareness-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .awareness-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain; 
+    object-position: center;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .awareness-card img:hover {
+    transform: scale(1.02);
+  }
+  
+  .awareness-card h4 {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary-text);
+    margin: 10px 0 5px;
+  }
+  
+  .awareness-card p {
+    font-size: var(--font-size-vsm);
+    color: var(--color-secondary-text);
+  }
+  
