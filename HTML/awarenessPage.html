@@ -1,94 +1,95 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>awarenessPage</title>
-  <link rel="stylesheet" href="../CSS/mainStyle.css">
-  <link rel="stylesheet" href="../CSS/awarenessPageStyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>التوعية الصحية</title>
+  <link rel="stylesheet" href="../CSS/mainStyle.css" />
+  <link rel="stylesheet" href="../CSS/awarenessPageStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <div id="navbar"></div>
+  <h1 class="page-title">التوعية الصحية</h1>
 
+  <!-- مقالات -->
+  <section class="section">
+    <h2 class="section-title"><i class="fas fa-book-medical"></i> المقالات الطبية</h2>
+    <div class="card-container">
 
-    <!-- المقالات الطبية -->
-    <section class="section">
-      <h3 class="section-title">📰 مقالات طبية</h3>
-      <div class="card-grid">
-          <!--كروت المقالات -->
-
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo2.jpg" alt="الكشف المبكر عن سرطان الثدي">
-            <h4>الكشف المبكر عن سرطان الثدي</h4>
-            <p>الكشف الدوري بيساعد في اكتشاف سرطان الثدي في مراحله الأولى، وده بيساعد على العلاج بنسبة نجاح أكبر. متأجليش صحتك!</p>
-          </div>
-          
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo1.jpg" alt="مقال طبي">
-            <h4>أهمية شرب المياه</h4>
-            <p>شرب المياه بانتظام بيحافظ على وظائف الجسم ويمنع الجفاف.</p>
-          </div>
-          
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo3.jpg" alt="الاكتئاب والحزن">
-            <h4>هل أنا حزين ولا مكتئب؟</h4>
-            <p>الحزن شعور طبيعي بييجي ويروح، لكن الاكتئاب حالة مستمرة وممكن تحتاج تدخل نفسي. متترددش تطلب المساعدة لو مش قادر تتخطى الشعور.</p>
-          </div>
-          
+      <div class="article-card">
+        <img src="../Materials/awarenessphotos/photo4.jpg" alt= "مريض سكر">
+        <h3>مرض السكري: أنواعه وأعراضه</h3>
+        <details class="article-expand">
+          <summary>اقرأ المزيد</summary>
+          <p>السكري نوعان: الأول يعتمد على الأنسولين، والثاني يظهر بعد سن الأربعين ويرتبط بنمط الحياة. تشمل الأعراض العطش الشديد، وكثرة التبول، وفقدان الوزن.</p>
+        </details>
       </div>
-        <h3 class="section-title">نصائح وقائية</h3>
-        <div class="card-grid">
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo5.jpg" alt="غسل اليدين">
-            <h4>غسل اليدين بانتظام</h4>
-            <p>غسل اليدين يقلل من خطر العدوى وانتقال الفيروسات، خصوصًا قبل الأكل وبعد استخدام الحمام.</p>
-          </div>
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo6.jpg" alt="ممارسة الرياضة">
-            <h4>مارس الرياضة</h4>
-            <p>حتى 30 دقيقة مشي يوميًا بتفرق في صحة القلب والمزاج العام.</p>
-          </div>
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo4.jpg" alt="تقليل السكر">
-            <h4>قلل السكر</h4>
-            <p>السكر الزائد بيزود خطر الإصابة بالسكري والسمنة. حاول تستبدله بالفواكه.</p>
-          </div>
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo7.jpg" alt="النوم الكافي">
-            <h4>احصل على نوم كافي</h4>
-            <p>النوم الجيد بيقوّي المناعة وبيحافظ على صحتك النفسية والبدنية. حاول تنام من 6 لـ 8 ساعات يوميًا.</p>
-          </div>
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo8.jpg" alt="التوتر">
-            <h4>تجنب التوتر الزائد</h4>
-            <p>الضغوط المستمرة بتأثر على صحتك العامة. حاول تخصص وقت للراحة، والهوايات، والتأمل.</p>
-          </div>
-          <div class="awareness-card">
-            <img src="../Materials/awarenessphotos/photo9.jpg" alt="التباعد الاجتماعي">
-            <h4>التباعد الاجتماعي</h4>
-            <p>في أوقات العدوى، الحفاظ على مسافة آمنة بينك وبين الآخرين بيساعد على تقليل انتشار الأمراض.</p>
-          </div>
 
-        </div>
+      <div class="article-card">
+        <img src="../Materials/awarenessphotos/heart.jpg" alt="صحة القلب">
+        <h3>صحة القلب: كيف تحافظ عليها؟</h3>
+        <details class="article-expand">
+          <summary>اقرأ المزيد</summary>
+          <p>تناول الطعام الصحي، الابتعاد عن التدخين، ممارسة الرياضة بانتظام، والفحوصات الدورية كلها عوامل مهمة للحفاظ على قلب صحي.</p>
+        </details>
+      </div>
 
-      <section>
-  <h3 class="section-title">فيديوهات توعوية</h3>
+      <div class="article-card">
+        <img src="../Materials/awarenessphotos/photo8.jpg" alt="الصحة النفسية">
+        <h3>الصحة النفسية: لماذا نهتم بها؟</h3>
+        <details class="article-expand">
+          <summary>اقرأ المزيد</summary>
+          <p>الصحة النفسية لا تقل أهمية عن الجسدية. من المهم التحدث عن مشاعرك وطلب المساعدة عند الشعور بالاكتئاب أو القلق أو التوتر.</p>
+        </details>
+      </div>
 
-  <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/رابط_الفيديو_هنا" frameborder="0" allowfullscreen></iframe>
-  </div>
+      <div class="article-card">
+        <img src="../Materials/awarenessphotos/photo2.jpg" alt="الصحة النفسية">
+        <h3>الكشف المبكر: سلاحك ضد السرطان</h3>
+        <details class="article-expand">
+          <summary>اقرأ المزيد</summary>
+          <p>الفحص المبكر يساعد في كشف السرطان قبل تطوره، ما يزيد من فرص العلاج والشفاء، خصوصًا لسرطان الثدي والقولون.</p>
+        </details>
+      </div>
 
-  <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/رابط_الفيديو_هنا" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/رابط_الفيديو_هنا" frameborder="0" allowfullscreen></iframe>
-  </div>
-</section>
-
-
+    </div>
   </section>
-       <script src="/JS/navbarScript.js"></script>
 
+  <!--النصائح الوقائية -->
+  <section class="section">
+    <h2 class="section-title"><i class="fas fa-shield-heart"></i> النصائح الوقائية</h2>
+    <ul class="tips-list">
+      <li>🧼 اغسل يديك جيدًا بانتظام.</li>
+      <li>😷 ارتدِ الكمامة في الأماكن المزدحمة.</li>
+      <li>🥗 تناول غذاء صحي ومتوازن.</li>
+      <li>🚰 اشرب كميات كافية من الماء يوميًا.</li>
+      <li>🏃 مارس النشاط البدني ولو 30 دقيقة يوميًا.</li>
+    </ul>
+  </section>
+
+  <!--  الفيديوهات -->
+  <section class="section">
+    <h2 class="section-title"><i class="fas fa-video"></i> الفيديوهات التوعوية</h2>
+    <div class="card-container">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/2Z4m4lnjxkY" frameborder="0" allowfullscreen></iframe>
+        <h3>التعامل مع الضغط النفسي</h3>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/iOCk9QeqJvQ" frameborder="0" allowfullscreen></iframe>
+        <h3>نصائح عامة لصحة أفضل</h3>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/iOCk9QeqJvQ" frameborder="0" allowfullscreen></iframe>
+        <h3>ما هي الصحة النفسية؟</h3>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/DIRHz6t7fSU" frameborder="0" allowfullscreen></iframe>
+        <h3>أهمية الفحص المبكر للسرطان</h3>
+      </div>
+    </div>
+  </section>
+  <script src="/JS/navbarScript.js"></script>
 </body>
 </html>
