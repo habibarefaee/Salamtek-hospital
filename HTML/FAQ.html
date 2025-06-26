@@ -1,14 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="../css/mainStyle.css"> 
+  <link rel="stylesheet" href="../css/FAQ.css">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-      <div id="navbar"></div>
+  <div id="navbar"></div>
 
 
-       <script src="/JS/navbarScript.js"></script>
+  <section class="faq-section">
+
+    <h1 class="page-title">الأسئلة الشائعة</h1>
+  
+    <div class="faq-item">
+      <h2><i class="fas fa-circle-question"></i> كيف يمكنني حجز موعد؟</h2>
+      <p>يمكنك الحجز من خلال صفحة الحجز على الموقع أو التواصل مباشرة عبر الهاتف أو زيارة العيادة.</p>
+    </div>
+  
+    <div class="faq-item">
+      <h2><i class="fas fa-circle-question"></i> هل يوجد طوارئ على مدار 24 ساعة؟</h2>
+      <p>نعم، لدينا قسم طوارئ يعمل طوال الأسبوع وعلى مدار 24 ساعة.</p>
+    </div>
+  
+    <div class="faq-item">
+      <h2><i class="fas fa-circle-question"></i> ما هي خصومات التأمين المتاحة؟</h2>
+      <p>نحن متعاقدون مع العديد من شركات التأمين ونوفر خصومات تصل إلى 50% حسب نوع التأمين.</p>
+    </div>
+  
+    <div class="faq-item">
+      <h2><i class="fas fa-circle-question"></i> هل يمكن استلام النتائج أونلاين؟</h2>
+      <p>نعم، يمكن استلام النتائج من خلال البريد الإلكتروني أو تطبيق واتساب.</p>
+    </div>
+  
+    <div class="faq-item">
+      <h2><i class="fas fa-circle-question"></i> هل أحتاج لصيام قبل التحليل؟</h2>
+      <p>بعض التحاليل تتطلب الصيام مثل السكر والكوليسترول.</p>
+    </div>
+  
+    <div class="faq-item">
+      <h2><i class="fas fa-circle-question"></i> ما مدة انتظار النتائج؟</h2>
+      <p>تتراوح بين 6 إلى 48 ساعة حسب نوع التحليل.</p>
+    </div>
+
+    <section class="ask-question-box">
+        <h2>عندك سؤال تاني؟ اكتبه هنا</h2>
+        <form action="mailto:habibarefaee665@email.com" method="POST" enctype="text/plain">
+          <label for="user-question">سؤالك:</label>
+          <textarea id="user-question" name="question" placeholder="اكتب سؤالك هنا..." required></textarea>
+          <button type="submit" class="button secondary">إرسال السؤال</button>
+        </form>
+      </section>
+  </section>
+  <script src="/JS/navbarScript.js"></script>
 </body>
 </html>
