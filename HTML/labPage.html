@@ -1,14 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>labPage</title>
+  <link rel="stylesheet" href="../css/mainStyle.css"> 
+  <link rel="stylesheet" href="../css/labPageStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-      <div id="navbar"></div>
 
+  <div id="navbar"></div>
 
-       <script src="/JS/navbarScript.js"></script>
+  <h1 class="page-title">خدمات معمل التحاليل</h1>
+
+  <!-- أنواع التحاليل -->
+  <section class="lab-section">
+    <h2>أنواع التحاليل المتاحة</h2>
+    <ul class="lab-list">
+      <li><i class="fas fa-vial"></i> تحليل دم شامل (CBC)</li>
+      <li><i class="fas fa-syringe"></i> تحليل سكر</li>
+      <li><i class="fas fa-microscope"></i> تحليل وظائف كبد وكلى</li>
+      <li><i class="fas fa-virus"></i> تحليل فيروسات (C - B)</li>
+      <li><i class="fas fa-dna"></i> تحليل هرمونات</li>
+      <li><i class="fas fa-flask"></i> تحليل بول وبراز</li>
+      <li><i class="fas fa-heartbeat"></i> تحاليل ما قبل الزواج</li>
+      <li><i class="fas fa-allergies"></i> تحاليل الحساسية والمناعة</li>
+    </ul>
+  </section>
+  
+  <!-- خطوات الحجز -->
+  <section class="lab-section">
+    <h2>خطوات الحجز</h2>
+    <ol class="lab-steps">
+      <li>اختر نوع التحليل المطلوب.</li>
+      <li>املأ نموذج الحجز أو تواصل معنا.</li>
+      <li>حدد موعدًا لسحب العينة.</li>
+      <li>احضر للمعمل أو اطلب زيارة منزلية (عند التوافر).</li>
+      <li>سداد الرسوم قبل أو بعد التحليل.</li>
+    </ol>
+  </section>
+
+  <!-- استلام النتائج -->
+  <section class="lab-section">
+    <h2>موعد استلام النتائج</h2>
+    <p class="lab-time">
+      🕐 التحاليل العادية: خلال 6 إلى 12 ساعة.<br>
+      🧪 تحاليل الفيروسات والهرمونات: من 24 إلى 48 ساعة.<br>
+      📧 يمكن استلام النتائج ورقيًا أو إلكترونيًا.
+    </p>
+  </section>
+
+  <section class="lab-section">
+    <h2>الأسئلة الشائعة</h2>
+    <ul class="lab-list">
+      <li><strong>هل يمكن استلام النتائج إلكترونيًا؟</strong><br>نعم، عبر البريد أو واتساب.</li>
+      <li><strong>هل يوجد خصم للتحاليل الجماعية؟</strong><br>نعم، للمجموعات أكثر من 3 أفراد.</li>
+      <li><strong>هل أحتاج لحجز مسبق؟</strong><br>يفضل الحجز لتوفير الوقت.</li>
+    </ul>
+  </section>
+  
+
+  <script src="/JS/navbarScript.js"></script>
 </body>
 </html>

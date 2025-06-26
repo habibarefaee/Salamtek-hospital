@@ -1,0 +1,59 @@
+.page-title {
+    text-align: center;
+    font-size: var(--font-size-xlg);
+    color: var(--color-primary);
+    margin-top: 30px;
+    position: relative;
+  }
+  
+  .page-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-primary);
+    margin: 10px auto;
+    display: block;
+    border-radius: 2px;
+  }
+  
+  .lab-section {
+    max-width: 800px;
+    background-color: var(--color-white);
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: var(--page-shadow);
+  }
+  
+  .lab-section h2 {
+    font-size: var(--font-size-lg);
+    color: var(--color-primary-text);
+    margin-bottom: 15px;
+  }
+  
+  .lab-list, .lab-steps {
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary-text);
+    line-height: 2;
+    padding-right: 20px;
+  }
+  
+  .lab-list {
+    list-style: none;
+  }
+  
+  .lab-steps {
+    list-style: decimal;
+  }
+  
+  .lab-time {
+    font-size: var(--font-size-base);
+    color: var(--color-secondary-text);
+    line-height: 1.8;
+  }
+  .lab-list i {
+    color: var(--color-primary);
+    margin-left: 10px;
+    font-size: 16px;
+  }
+    
