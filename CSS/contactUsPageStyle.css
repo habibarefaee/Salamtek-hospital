@@ -1,0 +1,41 @@
+
+        .container {
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color:var(--color-primary);
+            text-align: center;
+            padding-bottom:30px;
+        }
+   
+      
+        h2
+    {
+        margin: 10px;
+    }
+        
+       
+        .form {
+            margin-bottom: 15px;
+        }
+         label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+       
+        textarea {
+            height: 150px;
+        }
+     .innersec {
+            flex-basis: 48%;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }

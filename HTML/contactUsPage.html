@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href="../CSS/mainStyle.css">
+  <link rel="stylesheet" href="../CSS/contactUsPageStyle.css">
 </head>
 <body>
       <div id="navbar"></div>
+        <div class="container">
+        <h1>تواصل معنا</h1>
+        
+            <h2>خريطة المستشفى</h2>
+            <div class="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7211717955715!2d31.278629225574644!3d30.073525917194267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f9a91bb592b%3A0x79fd5f9fee194d7b!2z2YXYs9iq2LTZgdmKINin2YTYr9mF2LHYr9in2LTYjCDYp9mE2YjYp9mK2YTZidiMINmF2K3Yp9mB2LjYqSDYp9mE2YLYp9mH2LHYqeKArA!5e0!3m2!1sar!2seg!4v1750967167421!5m2!1sar!2seg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+            <h2>أرقام التواصل</h2>
+            <div class="section">
+                
+                <div class="innersec">
+                    <h3>الطوارئ</h3>
+                    <p>+20 12345</p>
+                </div>
+               
+                <div class="innersec">
+                    <h3>الاستفسارات</h3>
+                    <p>+20 1234567</p>
+                </div>
+            </div>
+        
+            <h2>البريد الإلكتروني</h2>
+            <div class="section">
+                <div class="innersec">
+                    <p>salamtakhospital@gmail.com</p>
+                </div>
+               
+            </div>
+        
+            <h2>إرسال رسالة</h2>
+            <div class="form">
+                <form action="send_message.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">الاسم بالكامل</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                   
+                    <div class="form">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="button">إرسال الرسالة</button>
+                </form>
+        </div>
+    </div>
 
 
        <script src="/JS/navbarScript.js"></script>
