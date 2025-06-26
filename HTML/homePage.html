@@ -4,30 +4,11 @@
     <meta charset="UTF-8">
     <title>Hospital</title>
     <link rel="stylesheet" href="/CSS/homePageStyle.css">
-        <link rel="stylesheet" href="/CSS/mainStyle.css">
+     <link rel="stylesheet" href="/CSS/mainStyle.css">
 
 </head>
 <body>
-     <nav class="navbar">
-        <a href="/HTML/homePage.html"><img src="/Materials/homephotos/logo.jpeg"class="logo" ></a>
-        
-        
-        <ul class="nav-links">
-                        <li><a href="/HTML/contactUsPage.html"> تواصل معنا</a></li>
-
-            <li><a href="/HTML/aboutPage.html">عنا </a></li>
-            <li><a href="sections.html">الاقسام</a></li>
-            <li><a href="/HTML/doctorsPage.html">الاطباء</a></li>
-            <li><a href="/HTML/homePage.html">الصفحه الرئيسيه</a></li>
-
-        </ul>
-              <div class="nav-buttons">
-    <button class="button">تسجيل الدخول</button>
-    
-    <button class="button secondary">مستخدم جديد</button>
-</div>
-  
-    </nav>
+    <div id="navbar"></div>
     <img src="/Materials/homephotos/hos3.webp" class="hospitalimg">
     <div class="about">
         <p>
@@ -80,7 +61,7 @@
     <div class="booking-content">
         <h2>!احجز موعدك الان</h2>
         <p>نحن نوفر افضل واسهل طريقه للحجز مع اطبائنا المتميزين</p>
-        <button class="btn"> احجز الان</button>
+        <button class="btn"> <a href="/HTML/aboutPage.html">احجز الان  </a></button>
     </div>
 </div>
    <div class="imgs">
@@ -106,5 +87,6 @@
 
 
    </div>
+   <script src="/JS/navbarScript.js"></script>
 </body>
 </html>
