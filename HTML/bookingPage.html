@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/bookingPageStyle.css">
+     <link rel="stylesheet" href="/CSS/mainStyle.css">    
+      
+</head>
+<body>
+      <div id="navbar"></div>
+        <div class="container">
+        <h1>احجز موعدك</h1>
+        <form>
+            <div class="form">
+                <label>الاسم </label>
+                <input placeholder="اكتب اسمك كامل" required>
+            </div>
+            
+            <div class="form">
+                <label >رقم الهاتف </label>
+                <input placeholder="اكتب رقم هاتفك" required>
+            </div>
+            
+            <div class="form">
+                <label >التخصص</label>
+                <select  required>
+                    <option>قلب</option>
+                    <option>باطنه</option>
+                    <option>مخ واعصاب</option>
+                    <option>انف واذن وحنجره</option>
+
+               
+                </select>
+            </div>
+            
+            <div class="form">
+                <label  >الطبيب</label>
+                <select  required>
+                    <option >دكتور مريم</option>
+                    <option>دكتور سهر</option>
+                    <option>دكتور مارينا</option>
+                    <option>دكتور يوسف</option>
+                
+                </select>
+            </div>
+            
+            
+                <div class="form">
+                    <label>التاريخ</label>
+                    <input type="date"required>
+                </div>
+                
+                <div class="form">
+                    <label>الوقت</label>
+                    <input type="time"required>
+                </div>
+            
+            
+            <button type="submit">حجز الموعد</button>
+        </form>
+    </div>
+
+
+       <script src="/JS/navbarScript.js"></script>
+</body>
+</html>
