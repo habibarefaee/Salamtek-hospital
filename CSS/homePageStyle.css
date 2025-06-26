@@ -7,7 +7,7 @@
             display: flex;
             align-items: center;
             padding: 15px ;
-            box-shadow: 0 8px 30px rgb(99, 99, 99);
+            box-shadow:var(--page-shadow);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -19,7 +19,7 @@
         .logo {
             width: 140px;
             height: 100px;
-            margin-right: 80px;
+            margin-right: 0px;
             margin-left: 30px;
         }
         
@@ -41,7 +41,7 @@
         }
         
         .nav-links a:hover {
-            color: #1a73e8;
+            color: var(--color-primary);
             text-decoration:underline;
         }
         
@@ -92,7 +92,7 @@
         }
         
         .se {
-            color: #1a73e8;
+            color:var(--color-primary);
         }
         
 
@@ -101,8 +101,8 @@
     display: flex;
     justify-content: space-around;
     padding: 40px;
-    background-color: #1a73e8;
-    color: rgb(255, 255, 255);
+    background-color: var(--color-primary-hover);
+    color: var(--color-gray-50);
 }
 
 .num {
@@ -117,14 +117,14 @@
 .booking-section {
     padding: 60px;
     margin: 50px ;
-    border: 5px solid rgb(51, 124, 250);
+    border: 5px solid var(--color-primary-hover);
     border-radius: 20px;
     margin-left: 90px;
 }
 
 .booking-content h2 {
     font-size: 50px;
-    color: #1a73e8;
+    color: var(--color-primary-hover);
     margin-bottom: 20px;
         margin-left: 110px;
 
@@ -132,14 +132,14 @@
 
 .booking-content p {
     font-size: 25px;
-    color: #555;
+    color: var(--color-secondary-text);
     margin-bottom: 30px;
     margin-left: 110px;
 }
 
-.btn , .btnn1 ,.btnn2 {
+.btn  {
     padding: 15px 40px;
-    background-color: #1a73e8;
+    background-color: var(--color-primary-hover);
     color: white;
     border: none;
     border-radius: 30px;
@@ -147,13 +147,13 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+    box-shadow: 0 4px 15px var(--color-primary-hover);
     margin-left: 110px;
 
 }
 
 .btn:hover {
-    background-color: #0d5bba;
+    /* background-color: var(--color-primary); */
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
 }
@@ -167,7 +167,7 @@
 {
     margin-top: 50px;
     padding: 40px;
-    background-color: #f3f3f3;
+    background-color: var(--color-gray-50);
 }
 .about p
 {
@@ -187,14 +187,14 @@
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: var(--color-gray-200);
     border-radius: 10px;
 }
 
 .kter p {
     font-size: 24px;
     line-height: 1.6;
-    color: #333;
+    color: var(--color-primary-text);
     flex: 1;
 }
 
@@ -206,27 +206,3 @@
     margin-right: 30px;
 }
 
-.btnn1, .btnn2 {
-    margin-left: 0;
-    padding: 10px 25px;
-    font-size: 18px;
-}
-
-.btnn1 {
-    background-color: white;
-    color: #1a73e8;
-    border: 2px solid #1a73e8;
-}
-
-.btnn2 {
-    background-color: #1a73e8;
-    color: white;
-}
-
-.btnn1:hover {
-    background-color: #f0f7ff;
-}
-
-.btnn2:hover {
-    background-color: #0d5bba;
-}
