@@ -1,14 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>roomPage</title>
+  <link rel="stylesheet" href="../css/mainStyle.css">
+  <link rel="stylesheet" href="../css/roomPageStyle.css">
+
 </head>
 <body>
-      <div id="navbar"></div>
 
+  <div id="navbar"></div>
 
-       <script src="/JS/navbarScript.js"></script>
+  <h1 class="page-title">احجز غرفتك الآن</h1>
+
+  <div class="room-filter">
+    <label for="roomFilter">اختر نوع الغرفة:</label>
+    <select id="roomFilter">
+      <option value="all">كل الغرف</option>
+      <option value="standard">غرفة عادية</option>
+      <option value="private">غرفة خاصة</option>
+      <option value="vip">غرفة VIP</option>
+    </select>
+  </div>
+
+  <!--الغرفات--> 
+  <div class="rooms-container">
+    <div class="room-card" data-type="standard">
+      <img src="../Materials/roomphotos/normal.jpg" alt="غرفة عادية">
+      <div class="room-content">
+        <div class="room-title">غرفة عادية</div>
+        <div class="room-desc">غرفة اقتصادية بأثاث بسيط ومريحة للنزلاء.</div>
+        <div class="room-price">200 جنيه / ليلة</div>
+        <a href="bookingPage.html" class="button secondary">احجز الآن</a>
+      </div>
+    </div>
+
+    <div class="room-card" data-type="private">
+      <img src="../Materials/roomphotos/special.jpg" alt="غرفة خاصة">
+      <div class="room-content">
+        <div class="room-title">غرفة خاصة</div>
+        <div class="room-desc">غرفة أكثر خصوصية مزودة بحمام داخلي وتلفاز.</div>
+        <div class="room-price">400 جنيه / ليلة</div>
+        <a href="bookingPage.html" class="button secondary">احجز الآن</a>
+      </div>
+    </div>
+
+    <div class="room-card" data-type="vip">
+      <img src="../Materials/roomphotos/vip.jpg" alt="غرفة VIP">
+      <div class="room-content">
+        <div class="room-title">غرفة VIP</div>
+        <div class="room-desc">رفاهية مطلقة مع خدمات إضافية وراحة كاملة.</div>
+        <div class="room-price">700 جنيه / ليلة</div>
+        <a href="bookingPage.html" class="button secondary">احجز الآن</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- شروط الحجز -->
+  <div class="booking-terms">
+    <h2>شروط الحجز</h2>
+    <ul>
+      <li>🔹 يجب الحجز قبل موعد الوصول بـ 24 ساعة على الأقل.</li>
+      <li>🔹 في حالة الإلغاء قبل 12 ساعة من الموعد يتم استرجاع المبلغ بالكامل.</li>
+      <li>🔹 في حالة الإلغاء بعد 12 ساعة يتم خصم 25% من القيمة.</li>
+      <li>🔹 الالتزام بالهدوء داخل الغرفة وعدم التدخين.</li>
+      <li>🔹 الأسعار تشمل الضرائب ولا تشمل الوجبات.</li>
+      <li>🔹 تسجيل الوصول من الساعة 2 ظهرًا وتسجيل المغادرة قبل 12 ظهرًا.</li>
+    </ul>
+  </div>
+
+  <!-- تظبيط اما اختار واحده يظبط -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterSelect = document.getElementById('roomFilter');
+      const roomCards = document.querySelectorAll('.room-card');
+
+      filterSelect.addEventListener('change', function () {
+        const selectedType = this.value;
+        roomCards.forEach(card => {
+          const type = card.getAttribute('data-type');
+          card.style.display = (selectedType === 'all' || selectedType === type) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+
+  <script src="/JS/navbarScript.js"></script>
 </body>
 </html>
