@@ -1,7 +1,8 @@
 
         .hospitalimg
         {
-            width:1350px;
+             width: 100%;
+    overflow: hidden;
             height: 550px;
         }
 
@@ -116,8 +117,8 @@
 .cover
 {
     margin:50px 0px;
-    width: 1350px;
-    height: 200px;
+  width: 100%;
+    overflow: hidden;    height: 200px;
 }
 .about 
 {
