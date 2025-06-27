@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>donationPage</title>
+  <link rel="stylesheet" href="../CSS/mainStyle.css">
+  <link rel="stylesheet" href="../CSS/donationsStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-      <div id="navbar"></div>
 
+  <div id="navbar"></div>
 
-       <script src="/JS/navbarScript.js"></script>
+  <div class="donation-container">
+
+    <h1 class="page-title">صفحة التبرعات</h1>
+
+    <section class="donation-section blood">
+      <h2><i class="fas fa-tint"></i> التبرع بالدم</h2>
+      <p>تبرعك بالدم يساعد في إنقاذ حياة العديد من المرضى، خاصة في حالات الطوارئ والعمليات الجراحية.</p>
+      <a href="donationForm.html" class="button secondary">احجز موعد للتبرع</a>
+    </section>
+
+    <section class="donation-section money">
+      <h2><i class="fas fa-hand-holding-heart"></i> التبرع المالي</h2>
+      <p>يمكنك دعم مستشفانا ماليًا للمساعدة في تحسين الخدمات الطبية المقدمة للمرضى.</p>
+      <ul class="donation-methods">
+        <li><i class="fas fa-credit-card"></i> التبرع عن طريق الفيزا</li>
+        <li><i class="fas fa-university"></i> تحويل بنكي</li>
+        <li><i class="fas fa-wallet"></i> تبرع مباشر بالمستشفى</li>
+      </ul>
+      <a href="donationForm.html" class="button">تبرع الآن</a>
+    </section>
+
+    <section class="donation-section conditions">
+      <h2><i class="fas fa-list-check"></i> شروط التبرع بالدم</h2>
+      <ul class="conditions-list">
+        <li>أن يكون المتبرع بصحة جيدة.</li>
+        <li>العمر بين 18 و60 سنة.</li>
+        <li>الوزن لا يقل عن 50 كجم.</li>
+        <li>لم يقم بالتبرع في آخر 3 شهور.</li>
+        <li>عدم وجود أمراض مزمنة أو معدية.</li>
+      </ul>
+    </section>
+
+    <section class="donation-section motivation">
+      <blockquote>💖 تبرعك اليوم قد ينقذ حياة غدًا 💖</blockquote>
+    </section>
+
+  </div>
+
+  <div id="footer"></div>
+  <script src="../JS/navbarScript.js"></script>
+  <script src="../JS/footerScript.js"></script>
+
 </body>
 </html>

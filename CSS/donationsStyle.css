@@ -1,0 +1,78 @@
+.donation-container {
+    width: 85%;
+    margin: 40px auto;
+    background-color: var(--color-white);
+    padding: 30px;
+    box-shadow: var(--page-shadow);
+    border-radius: 15px;
+  }
+  
+  .page-title {
+    text-align: center;
+    color: var(--color-primary);
+    font-size: var(--font-size-xlg);
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .page-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-primary);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .donation-section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: var(--color-gray-100);
+    border-radius: 12px;
+    box-shadow: var(--page-shadow);
+  }
+  
+  .donation-section h2 {
+    font-size: var(--font-size-lg);
+    margin-bottom: 15px;
+    color: var(--color-primary-text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .donation-section p {
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary-text);
+    margin-bottom: 15px;
+  }
+  
+  .donation-methods,
+  .conditions-list {
+    list-style: none;
+    padding-right: 20px;
+    line-height: 2;
+    color: var(--color-secondary-text);
+  }
+  
+  .donation-methods li i,
+  .conditions-list li::before {
+    color: var(--color-primary);
+    margin-left: 8px;
+  }
+  
+  .conditions-list li::before {
+    content: "✔";
+  }
+  
+  .motivation blockquote {
+    text-align: center;
+    font-size: var(--font-size-lg);
+    color: var(--color-secondary);
+    background-color: var(--color-gray-200);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
