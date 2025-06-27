@@ -1,0 +1,86 @@
+.achievements-container {
+    width: 85%;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: var(--page-shadow);
+    border-radius: 15px;
+  }
+  
+  .page-title {
+    text-align: center;
+    color: var(--color-primary);
+    font-size: var(--font-size-xlg);
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .page-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-primary);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .achievement-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--color-gray-100);
+    border-radius: 12px;
+    box-shadow: var(--page-shadow);
+  }
+  
+  .achievement-section h2 {
+    font-size: var(--font-size-lg);
+    margin-bottom: 15px;
+    color: var(--color-primary-text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .big-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-secondary);
+    text-align: center;
+  }
+  
+  .cert-grid, .event-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .cert-grid img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid var(--color-gray-300);
+    box-shadow: var(--page-shadow);
+  }
+  .cert-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary);
+  }
+  .event-gallery img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--page-shadow);
+  }
+  
+  .doctors-awards ul {
+    padding-right: 20px;
+    list-style-type: '🏅 ';
+    font-size: var(--font-size-sm);
+    line-height: 2;
+    color: var(--color-secondary-text);
+  }
+  

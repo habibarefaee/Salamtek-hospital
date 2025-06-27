@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>achievementsPage</title>
+  <link rel="stylesheet" href="../CSS/mainStyle.css">
+  <link rel="stylesheet" href="../CSS/achievementsPageStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-      <div id="navbar"></div>
 
+  <div id="navbar"></div>
 
-       <script src="/JS/navbarScript.js"></script>
+  <div class="achievements-container">
+    <h1 class="page-title">إنجازاتنا</h1>
+
+   
+    <section class="achievement-section patients">
+      <h2><i class="fas fa-user-md"></i> عدد المرضى الذين تم علاجهم</h2>
+      <p class="big-number">+15,000</p>
+    </section>
+
+    <section class="achievement-section certifications">
+      <h2><i class="fas fa-certificate"></i> شهادات الجودة</h2>
+      <div class="cert-grid">
+        <img src="../Materials/acheivments/photo1.jpg" alt="شهادة 1">
+        <img src="../Materials/acheivments/photo3.png" alt="شهادة 2">
+        <img src="../Materials/acheivments/photo2.jpg" alt="شهادة 3">
+      </div>
+    </section>
+
+    <section class="achievement-section events">
+      <h2><i class="fas fa-stethoscope"></i> فعاليات طبية</h2>
+      <div class="event-gallery">
+        <img src="../Materials/acheivments/photo4.jpg" alt="فعالية 1">
+        <img src="../Materials/acheivments/photo5.jpg" alt="فعالية 2">
+      </div>
+    </section>
+
+    <section class="achievement-section doctors-awards">
+      <h2><i class="fas fa-award"></i> شهادات تقدير للأطباء</h2>
+      <ul>
+        <li>د. أحمد فؤاد – أفضل طبيب قلب 2024</li>
+        <li>د. سارة محمد – التميز في طب الأطفال</li>
+        <li>د. كريم مصطفى – التميز في الجراحة العامة</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="../JS/navbarScript.js"></script>
+  <script src="../JS/footerScript.js"></script>
 </body>
 </html>
