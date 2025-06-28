@@ -91,7 +91,20 @@
     </div>
   </section>
   <div id="footer"></div>
-  <script src="../JS/footerScript.js"></script>
-  <script src="../JS/navbarScript.js"></script>
+  <script>
+    // تحميل النافبار
+    fetch("../navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+
+    // تحميل الفوتر
+    fetch("../footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
 </body>
 </html>
