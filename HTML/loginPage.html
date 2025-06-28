@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/loginPageStyle.css">
-     <link rel="stylesheet" href="../CSS/mainStyle.css">
+  <meta charset="UTF-8">
+  <title>loginPage</title>
+  <link rel="stylesheet" href="../CSS/mainStyle.css">
+  <link rel="stylesheet" href="../CSS/loginPageStyle.css">
 </head>
 <body>
-      <div id="navbar"></div>
-        <div class="container">
-        <h1> تسجيل الدخول</h1>
-        <form>
-            
-            <div class="input">
-                <label >البريد الالكترونى </label>
-                <input  placeholder="اكتب بريدك الالكتروني" required>
-            </div>
-            <div class="input">
-                <label >كلمة السر</label>
-                <input placeholder="اكتب كلمه سر" required>
-            </div>
-           
-            <button>تسجيل الدخول</button>
-        </form>
-    </div>
-    <div id="footer"></div>
-    <script src="../JS/navbarScript.js"></script>
-    <script src="../JS/navbarScript.js"></script>
+  <div id="navbar"></div>
+
+  <div class="container">
+    <h1>تسجيل الدخول</h1>
+    <form id="loginForm">
+      <div class="input">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" placeholder="اكتب بريدك الإلكتروني" required />
+      </div>
+
+      <div class="input">
+        <label for="password">كلمة المرور</label>
+        <input type="password" id="password" placeholder="ادخل كلمة المرور" required />
+      </div>
+
+      <button type="submit">تسجيل الدخول</button>
+
+      <p class="login-link">نسيت كلمة المرور؟ <a href="registerPage.html">اضغط هنا</a></p>
+    </form>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="../JS/navbarScript.js"></script>
+  <script src="../JS/footerScript.js"></script>
+
+  <script>
+    const form = document.getElementById('loginForm');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      // localStorage
+      const savedEmail = localStorage.getItem('email');
+      const savedPassword = localStorage.getItem('password');
+
+      if (email === savedEmail && password === savedPassword) {
+        alert("تم تسجيل الدخول بنجاح!");
+        window.location.href = "homePage.html";
+      } else {
+        alert("الإيميل أو كلمة المرور غير صحيحة");
+      }
+    });
+  </script>
+  
 </body>
 </html>

@@ -1,56 +1,82 @@
-
-        
-
-        
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 650px;
-            text-align: center;
-            margin-top: 20px;
-            margin-right: 330px;
-        }
-        
-        .container h1 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-        
-        .input {
-            margin-bottom: 20px;
-            text-align:right;
-        }
-        
-        .input label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #555;
-        }
-        
-        .input input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        
-        .input input:focus {
-            outline:none;
-        }
-       
-        
-        .link {
-            color: #666;
-            text-decoration: none;
-        }
-        
-        
-        
-        .link span {
-            color: #4285f4;
-            font-weight: bold;
-        }
+.container {
+    width: 85%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 40px;
+    background: var(--color-white);
+    box-shadow: var(--page-shadow);
+    border-radius: 15px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    font-size: 30px;
+  }
+  
+  h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-primary);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .input {
+    margin-bottom: 20px;
+  }
+  
+  .input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  .input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .input input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px var(--color-primary);
+  }
+  
+  button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--color-primary-hover);
+  }
+  
+  .login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .login-link span {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+  
