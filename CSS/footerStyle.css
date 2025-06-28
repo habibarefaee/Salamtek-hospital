@@ -65,4 +65,30 @@
     font-size: var(--font-size-vsm);
     color: var(--color-secondary-text);
   }
+  /*Responsive*/
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-brand {
+      font-size: 20px;
+    }
+  
+    .footer-links li {
+      text-align: center;
+    }
+  
+    .social-icons a {
+      font-size: 18px;
+      margin: 6px;
+    }
+  
+    .footer-copy {
+      font-size: 12px;
+      line-height: 1.6;
+    }
+  }
+  
   

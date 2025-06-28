@@ -1,24 +1,36 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<link rel="stylesheet" href="../CSS/mainStyle.css">
-<link rel="stylesheet" href="../CSS/navbarStyle.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <link rel="stylesheet" href="../CSS/mainStyle.css" />
+  <link rel="stylesheet" href="../CSS/navbarStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
 
-<nav class="navbar">
-    <!-- اللوجو -->
+  <nav class="navbar">
     <a href="homePage.html" class="logo">
-        <i class="fas fa-heartbeat"></i> سلامتك
-      </a>
-    
-  <ul class="nav-links">
-    <li><a href="homePage.html">الصفحة الرئيسية</a></li>
-    <li><a href="donations.html">التبرعات</a></li>
-    <li><a href="doctorsPage.html">الأطباء</a></li>
-    <li><a href="contactUsPage.html">تواصل معنا</a></li>
-    <li><a href="aboutPage.html">من نحن</a></li>
-  </ul>
+      <i class="fas fa-heartbeat"></i> سلامتك
+    </a>
 
-  <div class="nav-buttons">
-    <a href="loginPage.html" class="button">تسجيل الدخول</a>
-    <a href="registerPage.html" class="button secondary">مستخدم جديد</a>
-  </div>
-</nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+    <ul class="nav-links">
+      <li><a href="homePage.html">الصفحة الرئيسية</a></li>
+      <li><a href="donations.html">التبرعات</a></li>
+      <li><a href="doctorsPage.html">الأطباء</a></li>
+      <li><a href="contactUsPage.html">تواصل معنا</a></li>
+      <li><a href="aboutPage.html">من نحن</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a href="loginPage.html" class="button">تسجيل الدخول</a>
+      <a href="registerPage.html" class="button secondary">مستخدم جديد</a>
+    </div>
+  </nav>
+
+</body>
+</html>
