@@ -19,16 +19,38 @@ h1::after {
             margin: 20px auto;
         }
 
-        .title , .title1{
+        .title{
             text-align: center;
             font-size: 20px;
             font-weight: bold;
         }
-        .title1
-        {
-            font-size: 40px;
-            margin-bottom:20px ;
+      
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
         }
+
+         .page-title{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        
+            text-align: center;
+    color: var(--color-primary);
+    font-size: var(--font-size-xlg);
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .page-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-primary);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
 
         .products-grid {
             display: grid;
