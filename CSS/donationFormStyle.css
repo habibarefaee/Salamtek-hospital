@@ -1,0 +1,67 @@
+.donate-form-container {
+  width: 85%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  box-shadow: var(--page-shadow);
+  border-radius: 15px;
+  background-color: white;
+}
+
+.donation-form .form-group {
+  margin-bottom: 20px;
+}
+
+.donation-form label {
+  display: block;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  margin-bottom: 8px;
+  font-size: var(--font-size-sm);
+}
+
+.donation-form input,
+.donation-form select,
+.donation-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: var(--font-size-sm);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 6px;
+  background-color: var(--color-white);
+  color: var(--color-primary-text);
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.donation-form input:focus,
+.donation-form select:focus,
+.donation-form textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 5px 3px rgba(0, 123, 255, 0.08);
+}
+
+.donation-form button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.page-title {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: var(--font-size-xlg);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: var(--color-primary);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
