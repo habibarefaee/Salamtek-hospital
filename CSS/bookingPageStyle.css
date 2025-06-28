@@ -1,56 +1,86 @@
 .container {
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 95%;
     max-width: 600px;
-    margin: 50px auto; 
-    background-color: white;
-}
-
-h1 {
-            color: var(--color-primary);
-            margin-bottom: 35px;
-            text-align: center;
-            font-size: 28px;
-        }
-        
-h1::after {
-            content: "";
-            display: block;
-            width: 80px;
-            height: 4px;
-            background-color: var(--color-primary);
-            margin: 10px auto 0;
-            border-radius: 2px;
-          }
-          
-.form {
-            margin-bottom: 20px;
-        }
-        
-label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            font-size: 10px;
-        }
-        
-button {
-            background-color: var(--color-primary);
-            color: white;
-            border: none;
-            padding: 14px;
-            width: 100%;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 600;
-            transition: background-color 0.3s;
-            margin-top: 10px;
-        }
-        
-button:hover {
-            background-color: var(--color-primary-hover);
-        }
-      
+    margin: 50px auto;
+    background-color: var(--color-white);
+  }
+  
+  h1 {
+    color: var(--color-primary);
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-primary);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--color-primary-text);
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+  }
+  
+  /* ✅ Responsive */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    label,
+    input,
+    select {
+      font-size: 15px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  }
+  

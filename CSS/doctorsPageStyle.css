@@ -1,76 +1,92 @@
-body{
-    background-color: var(--color-background);
-}
 .doctors-section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-  .doctors-title {
-    font-size: var(--font-size-xlg);
-    text-align: center;
-    margin-bottom: 40px;
-    color: var(--color-primary);
-  }
+.doctors-title {
+  font-size: var(--font-size-xlg);
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--color-primary);
+  position: relative;
+}
 
-  .doctors-title::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: var(--color-primary);
-    margin: 10px auto 0 auto;
-    border-radius: 2px;
-  }
+.doctors-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-primary);
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
 
-  .doctors-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
+.doctors-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
+.doctor-card {
+  background-color: var(--color-white);
+  box-shadow: var(--page-shadow);
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 15px;
+  border: 3px solid var(--color-primary);
+  transition: 0.3s ease;
+}
+
+.doctor-name {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--color-primary-text);
+}
+
+.doctor-specialty,
+.doctor-experience {
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary-text);
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .doctor-card {
-    background-color: var(--color-white);
-    box-shadow: var(--page-shadow);
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.3s;
-  }
-
-  .doctor-card:hover {
-    transform: translateY(-5px);
-    background-color: var(--color-gray-300);
+    width: 100%;
   }
 
   .doctor-card img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
-    margin-bottom: 15px;
-    border: 3px solid var(--color-primary);
+    width: 140px;
+    height: 140px;
   }
 
   .doctor-name {
-    font-size: var(--font-size-lg);
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 18px;
   }
 
   .doctor-specialty,
   .doctor-experience {
-    font-size: var(--font-size-sm);
-    color: var(--color-secondary-text);
-    margin-bottom: 8px;
+    font-size: 14px;
   }
-
-  @media (max-width: 768px) {
-    .doctor-card {
-      width: 100%;
-    }
-  }  
+}

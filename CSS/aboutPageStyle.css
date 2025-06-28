@@ -1,14 +1,16 @@
 .about-page {
     text-align: center;
+    padding: 20px;
     padding-bottom: 40px;
 }
 
 .cover {
-    margin: 10px; ;
+    margin: 10px auto;
     width: 90%;
     height: 300px;
     border-radius: 8px;
     object-fit: cover;
+    display: block;
 }
 
 .about-text {
@@ -48,7 +50,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 30px 50px;
+    padding: 30px 5%;
 }
 
 .about-gallery img {
@@ -62,4 +64,33 @@
 
 .about-gallery img:hover {
     transform: scale(1.05);
+}
+
+/*        Responsive         */
+
+@media (max-width: 768px) {
+    .cover {
+        height: 200px;
+    }
+
+    .about-text {
+        padding: 15px;
+    }
+
+    .about-text h1 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+
+    .about-gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .about-gallery img {
+        height: 180px;
+    }
 }
